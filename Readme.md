@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга](https://up.htmlacademy.ru/adaptive/21/user/1543349).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Панасюк`.
 
 ---
 
