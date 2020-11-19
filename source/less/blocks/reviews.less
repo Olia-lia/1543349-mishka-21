@@ -1,49 +1,40 @@
-.reviews {
-  &__wrapper {
-    padding: 0 30px 45px 30px;
-  }
+.reviews__wrapper {
+  padding: 0 30px;
+}
 
-  &__title {
-    .text-size(25px; 30px; 700);
-    color: #000000;
-  }
+.reviews__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  &__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+.reviews__item {
+  display: none;
 
-  &__item {
-    display: none;
-  }
-
-  &__text {
-    .text-size(15px; 30px; 400);
-    color: #444444;
-  }
-
-  &__user {
-    color: #444444;
-    margin: 0;
-    padding: 0;
-  }
-
-  &__link {
-    text-decoration: none;
+  &--current {
+    display: block;
   }
 }
 
-.reviews__user--name {
-
-  .text-size(17px; 24px; 700);
+.reviews__text {
+  .text-size(15px; 30px; 400);
+  color: @graphite;
 }
 
-.reviews__user--nickname {
+.reviews__user {
+  color: @graphite;
+  margin: 0;
+  padding: 0;
 
-  .text-size(17px; 30px; 400);
+  &--name {
+    .text-size(17px; 24px; 700);
+  }
+
+  &--nickname {
+    .text-size(17px; 30px; 400);
+  }
 }
 
-.reviews__item--current {
-  display: block;
+.reviews__link {
+  text-decoration: none;
 }
