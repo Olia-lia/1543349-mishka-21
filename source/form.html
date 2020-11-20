@@ -3,29 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__top">
-        <div class="page-header__logo">
-          <a><img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="логотип магазина Мишка"></a>
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="catalog.html" class="main-nav__link main-nav__link--catalog">Каталог товаров</a></li>
-              <li class="main-nav__item"><a href="form.html" class="main-nav__link main-nav__link--order">Вязание на заказ</a></li>
-              <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--search-form">Поиск по сайту</a></li>
-              <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--cart">Корзина: <span>пока пуста</span></a></li>
-            </ul>
+      <div class="page-header__wrapper">
+        <div class="page-header__top">
+          <div class="page-header__logo">
+            <a><img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="логотип магазина Мишка"></a>
           </div>
-        </nav>
-      </div>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="catalog.html" class="main-nav__link main-nav__link--catalog">Каталог товаров</a></li>
+                <li class="main-nav__item"><a href="form.html" class="main-nav__link main-nav__link--order">Вязание на заказ</a></li>
+                <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--search-form">Поиск по сайту</a></li>
+                <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--cart">Корзина: <span>пока пуста</span></a></li>
+              </ul>
+            </div>
+          </
+        </div>
 
-      <div class="page-header__bottom">
-        <h1 class="page__title">Вязание на заказ</h1>
+        <div class="page-header__bottom-inner">
+          <h1 class="page__title">Вязание на заказ</h1>
+        </div>
       </div>
     </header>
 
@@ -37,7 +40,7 @@
 
           <form class="order__form form" action="https://echo.htmlacademy.ru" method="post" target="blank">
             <fieldset class="form__group form__group--type">
-              <legend class="form__title form__title--type">Тип:</legend>
+              <legend class="form__title form__title--type">Тип</legend>
                 <ul class="form__list form__list--type">
                   <li class="form__item form__item--type">
                     <input class="visually-hidden form__input form__input--type" type="radio" id="accessory" name="item-type" value="accessory" checked>
@@ -52,7 +55,7 @@
             </fieldset>
 
             <fieldset class="form__group form__group--color">
-            <legend class="form__title form__title--color">Цвет:</legend>
+            <legend class="form__title form__title--color">Цвет</legend>
               <ul class="form__list form__list--color">
                 <li class="form__item form__item--color">
                   <input class="visually-hidden form__input form__input--color" type="checkbox" name="color" id="white" value="white" checked>
@@ -88,7 +91,7 @@
             <fieldset class="form__group form__group--name">
               <legend class="form__title form__title--name">ФИО</legend>
                 <label class="form__label form__label--name" for="user-name">Имя:<input class="form__input form__input--name" type="text" id="user-name" name="user" placeholder="Введите ваше имя*" required></label>
-                <label class="form__label form__label--name"  for="user-surname">Фамилия:<input class="form__input form__input--name"  type="text" id="user-surname" name="user" placeholder="Введите вашу фамилию*" required></label>
+                <label class="form__label form__label--name"  for="user-surname">Фамилия:<input class="form__input form__input--name"  type="text" id="user-surname" name="user" placeholder="Укажите фамилию*" required></label>
                 <label class="form__label form__label--name" for="user-middlename">Отчество:<input class="form__input form__input--name"  type="text" id="user-middlename" name="user" placeholder="Отчество, если желаете"></label>
             </fieldset>
 
@@ -110,7 +113,7 @@
                 <textarea class="form__input form__input--extra" name="wishes" id="wishes" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </fieldset>
               <div class="form__group">
-                <button class="form__button" type="submit">Отправить заказ</button>
+                <button class="form__button button" type="submit">Отправить заказ</button>
                 <span class="form__message">*Поля обязательны для заполнения</span>
               </div>
 
