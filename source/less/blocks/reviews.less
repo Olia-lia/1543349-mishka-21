@@ -1,0 +1,40 @@
+.reviews__wrapper {
+  padding: 0 30px;
+}
+
+.reviews__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__item {
+  display: none;
+
+  &--current {
+    display: block;
+  }
+}
+
+.reviews__text {
+  .text-size(15px; 30px; 400);
+  color: @graphite;
+}
+
+.reviews__user {
+  color: @graphite;
+  margin: 0;
+  padding: 0;
+
+  &--name {
+    .text-size(17px; 24px; 700);
+  }
+
+  &--nickname {
+    .text-size(17px; 30px; 400);
+  }
+}
+
+.reviews__link {
+  text-decoration: none;
+}
