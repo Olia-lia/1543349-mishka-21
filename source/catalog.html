@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
@@ -7,25 +7,27 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__top">
-        <div class="page-header__logo">
-          <a><img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="логотип магазина Мишка"></a>
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="catalog.html" class="main-nav__link main-nav__link--catalog">Каталог товаров</a></li>
-              <li class="main-nav__item"><a href="form.html" class="main-nav__link main-nav__link--order">Вязание на заказ</a></li>
-              <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--search-form">Поиск по сайту</a></li>
-              <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--cart">Корзина: <span>пока пуста</span></a></li>
-            </ul>
+      <div class="page-header__wrapper">
+        <div class="page-header__top">
+          <div class="page-header__logo">
+            <a href="index.html"><img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="логотип магазина Мишка"></a>
           </div>
-        </nav>
-      </div>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="catalog.html" class="main-nav__link main-nav__link--catalog">Каталог товаров</a></li>
+                <li class="main-nav__item"><a href="form.html" class="main-nav__link main-nav__link--order">Вязание на заказ</a></li>
+                <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--search-form">Поиск по сайту</a></li>
+                <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--cart">Корзина: <span>пока пуста</span></a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
 
-      <div class="page-header__bottom">
-        <h1 class="page__title">Каталог товаров</h1>
+        <div class="page-header__bottom-inner">
+          <h1 class="page__title">Каталог товаров</h1>
+        </div>
       </div>
     </header>
 
@@ -36,17 +38,17 @@
             <li class="catalog__item">
               <div class="catalog__photo">
                 <a href="product.html">
-                  <img src="" width="260" height="195" alt="Вязаный цветной зайчик">
+                  <img src="img/photo-1-mobile 1.jpg" width="260" height="195" alt="Вязаный цветной зайчик">
                 </a>
               </div>
               <div class="catalog__description">
-                <a href="product.html">
+                <a class="catalog__link" href="product.html">
                   <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
                 </a>
                 <p class="catalog__options">Рост 30 см, вес 200 г</p>
                 <div class="catalog__description-price">
-                  <b>1 200 руб.</b>
-                  <button class="button" type="button" aria-label="Купить">Купить</button>
+                  <p class="catalog__price">1 200 руб.</p>
+                  <a class="catalog__button" href="" aria-label="Купить">Купить</a>
                 </div>
               </div>
             </li>
@@ -54,34 +56,34 @@
             <li class="catalog__item">
               <div class="catalog__photo">
                 <a href="product.html">
-                  <img class="" src="" width="260" height="195" alt="Вязаная двухцветная корзинка">
+                  <img class="" src="img/photo-2-mobile 1.jpg" width="260" height="195" alt="Вязаная двухцветная корзинка">
                 </a>
               </div>
               <div class="catalog__description">
-                <a href="product.html">
+                <a class="catalog__link" href="product.html">
                   <h3 class="catalog__title product-title">Корзинка для белья</h3>
                 </a>
                 <p class="catalog__options">Диаметр 15 см, высота 10см</p>
                 <div class="catalog__description-price">
-                  <b>690 руб.</b>
-                  <button class="button" type="button" aria-label="Купить">Купить</button>
+                  <p class="catalog__price">690 руб.</p>
+                  <a class="catalog__button" href="" aria-label="Купить">Купить</a>
                 </div>
               </div>
             </li>
             <li class="catalog__item">
               <div class="catalog__photo">
                 <a href="product.html">
-                  <img class="" src="" width="260" height="195" alt="Вязаная двухцветная корзина">
+                  <img class="" src="img/photo-3-mobile 1.jpg" width="260" height="195" alt="Вязаная двухцветная корзина">
                 </a>
               </div>
               <div class="catalog__description">
-                <a href="product.html">
+                <a class="catalog__link" href="product.html">
                   <h3 class="catalog__title product-title">Большая корзинка для игрушек</h3>
                 </a>
                 <p class="catalog__options">Диаметр 30 см, высота 30см</p>
                 <div class="catalog__description-price">
-                  <b>1 500 руб.</b>
-                  <button class="button" type="button" aria-label="Купить">Купить</button>
+                  <p class="catalog__price">1 500 руб.</p>
+                  <a class="catalog__button" href="" aria-label="Купить">Купить</a>
                 </div>
               </div>
             </li>
@@ -92,7 +94,7 @@
           <div  class="video__wrapper">
             <h2 class="visually-hidden">Видео о наших работах</h2>
             <div class="video__title-container">
-              <h3 class="video__title-heading">Процесс производства</h3>
+              <h3 class="video__title">Процесс производства</h3>
             </div>
             <div class="video__content">
               <img class="video__image video__image--frame" src="" width="260" height="150" alt="обложка видео">
@@ -101,7 +103,7 @@
             <div class="video__description">
               <p class="video__description-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
               </p>
-              <a href="" class="video__link button-order">Сделать заказ</a>
+              <a href="" class="video__link button">Сделать заказ</a>
             </div>
           </div>
         </section>
