@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,11 +10,12 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__top">
-          <div class="page-header__logo">
-            <a href="index.html"><img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="логотип магазина Мишка"></a>
-          </div>
+
+            <a class="page-header__logo" href="index.html"><img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="логотип магазина Мишка"></a>
+
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
           <nav class="main-nav">
-            <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
                 <li class="main-nav__item"><a href="catalog.html" class="main-nav__link main-nav__link--catalog">Каталог товаров</a></li>
@@ -110,6 +112,9 @@
       </main>
       <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <svg width="102" height="34" alt="Логотип магазина 'Мишка'"></svg>
+        </div>
         <ul class="page-footer__social social">
           <li class="social__item"><a href="" class="social__link social__link--instagram" aria-label="Инстаграм">Инстаграм</a></li>
           <li class="social__item"><a href="" class="social__link social__link--facebook" aria-label="Фейсбук">Фейсбук</a></li>
