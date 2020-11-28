@@ -9,26 +9,23 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__top">
-
-            <a class="page-header__logo" href="index.html"><img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="логотип магазина Мишка"></a>
-
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <nav class="main-nav">
-
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item"><a href="catalog.html" class="main-nav__link main-nav__link--catalog">Каталог товаров</a></li>
-                <li class="main-nav__item"><a href="form.html" class="main-nav__link main-nav__link--order">Вязание на заказ</a></li>
-                <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--search-form">Поиск по сайту</a></li>
-                <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--cart">Корзина: <span>пока пуста</span></a></li>
-              </ul>
-            </div>
-          </nav>
+        <div class="page-header__logo">
+          <a href="index.html"><img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="логотип магазина Мишка"></a>
         </div>
-
-        <div class="page-header__bottom-inner">
-          <h1 class="page__title">Каталог товаров</h1>
+        <button class="main-nav__toggle main-nav--closed main-nav--nojs" type="button" aria-label="Открыть меню"></button>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="catalog.html" class="main-nav__link main-nav__link--catalog">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__link main-nav__link--order">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--search-form">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--cart">Корзина: <span>пока пуста</span></a></li>
+            <li class="main-nav__item main-nav__item--extra"><a href="" class="main-nav__link-extra main-nav__link-extra--new">Новые поступления</a></li>
+            <li class="main-nav__item main-nav__item--extra"><a href="" class="main-nav__link-extra main-nav__link-extra--sale">Распродажа</a></li>
+            <li class="main-nav__item main-nav__item--extra"><a href="" class="main-nav__link-extra main-nav__link-extra--delivery">Бесплатная доставка по России</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__container">
+          <h1 class="page-title">Каталог товаров</h1>
         </div>
       </div>
     </header>
@@ -126,5 +123,22 @@
         </div>
       </div>
     </footer>
-  </body>
+
+    <section class="modal-order">
+      <div class="modal-order__wrapper">
+        <h3 class="modal-order__title">Добавить в корзину</h3>
+        <div class="modal-order__sizes">
+          <p class="modal-order__text">Выберите размер:</p>
+          <form class="modal-order__form" method="post" action="https://echo.htmlacademy.ru">
+            <div class="modal-order__group">
+              <label class="modal-order__label" for="size-S">S<input class="modal-order__input visually-hidden" type="radio" name="size" id="size-S" value="S"></label>
+              <label class="modal-order__label" for="size-M">M<input class="modal-order__input visually-hidden" type="radio" name="size" id="size-M" value="M"></label>
+              <label class="modal-order__label" for="size-L">L<input class="modal-order__input visually-hidden" type="radio" name="size" id="size-L" value="L"></label>
+            </div>
+            <button class="modal-order__add" type="submit">Добавить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+</body>
 </html>

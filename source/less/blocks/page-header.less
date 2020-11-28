@@ -11,7 +11,7 @@
 }
 
 .page-header__index {
-  background: url("../img/hero-mobile1.jpg") no-repeat center 456px;
+  background: #f9f9f9 url("../img/hero-mobile1.jpg") no-repeat center 355px;
 
   @media (min-width: @tablet-width) {
     background: url("../img/hero-tablet.jpg") no-repeat center 88px,
@@ -23,8 +23,12 @@
   }
 }
 
-.page-header__bottom-inner {
-  background-color: #f1f1f1;
+.page-header__wrapper {
+  background: linear-gradient(to bottom, #ffffff 355px, #f1f1f1 355px);
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(to bottom, #ffffff 87px, #f1f1f1 88px);
+  }
 }
 
 .page-header__logo {

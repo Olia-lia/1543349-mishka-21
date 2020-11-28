@@ -9,10 +9,10 @@
 }
 
 .reviews__wrapper {
-  padding: 0 30px;
+  .center(30px);
 
-  @media (min-width: @tablet-width) {
-    padding: 0 50px;
+  @media (min-width: @tablet-width) and (max-width: 1149px) {
+    .center(50px);
     padding-bottom: 50px;
   }
 
@@ -27,7 +27,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 175px;
+    .desktop-indent();
   }
 }
 

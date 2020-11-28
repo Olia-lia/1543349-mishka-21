@@ -16,12 +16,12 @@
 .contacts__container-inner {
   padding: 40px 30px;
 
-  @media (min-width: @tablet-width) {
-    padding: 0 50px;
+  @media (min-width: @tablet-width) and (max-width: 1149px) {
+    .center(50px);
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 174px;
+    .desktop-indent();
   }
 }
 
@@ -39,7 +39,6 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {

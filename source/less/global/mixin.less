@@ -5,7 +5,6 @@
   font-weight: @font-weight;
 }
 
-
 .link-decoration(@color) {
   text-decoration: none;
   color: @color;
@@ -19,4 +18,12 @@
 .desktop-center() {
   margin: auto;
   max-width: 960px;
+}
+
+.center(@padding) {
+  padding: 0 @padding;
+}
+
+.desktop-indent(@padding: 175px) {
+  padding-left: @padding;
 }
