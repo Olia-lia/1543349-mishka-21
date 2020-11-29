@@ -9,19 +9,24 @@
 }
 
 .reviews__wrapper {
-  .center(30px);
+  padding: 0 30px;
 
   @media (min-width: @tablet-width) and (max-width: 1149px) {
-    .center(50px);
+    padding: 0 50px;
     padding-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
     background: url("../img/review1.png") no-repeat 50px 0;
+    padding-bottom: 47px;
   }
 }
 
 .reviews__slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
   @media (min-width: @tablet-width) {
     position: relative;
   }
@@ -72,8 +77,11 @@
 
 .reviews__link {
   text-decoration: none;
+  align-self: center;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
+    width: 175px;
     position: absolute;
     z-index: 2;
     right: 0;
@@ -82,6 +90,8 @@
 }
 
 .reviews__arrows {
+  align-self: center;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 13px;
@@ -90,6 +100,7 @@
   max-width: 260px;
 
   @media (min-width: @tablet-width) {
+    width: 175px;
     position: absolute;
     bottom: 0;
     right: 0;

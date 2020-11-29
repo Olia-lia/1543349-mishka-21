@@ -11,10 +11,13 @@
     <header class="page-header">
       <div class="page-header__index">
           <div class="page-header__logo">
-            <a href=""><img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="логотип магазина Мишка"></a>
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+              <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="логотип магазина Мишка"></a>
           </div>
-          <button class="main-nav__toggle main-nav--closed main-nav--nojs" type="button" aria-label="Открыть меню"></button>
-          <nav class="main-nav">
+          <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" type="button" aria-label="Открыть меню"></button>
+          <nav class="main-nav main-nav--opened main-nav--nojs">
             <ul class="main-nav__list">
               <li class="main-nav__item"><a href="catalog.html" class="main-nav__link main-nav__link--catalog">Каталог товаров</a></li>
               <li class="main-nav__item"><a href="form.html" class="main-nav__link main-nav__link--order">Вязание на заказ</a></li>
@@ -42,25 +45,31 @@
         <div class="featured__wrapper">
           <div class="featured__wrapper-inner">
             <h2 class="featured__title section-title">Вязаные корзинки</h2>
-            <span class="featured__label">Товар недели</span>
+            <div class="featured__label"><span >Товар<br> недели</span></div>
             <div class="featured__description description">
               <p class="description__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
               <table class="description__list">
                 <tr class="description__item">
                   <td class="description__parametr">Цвет:</td>
-                  <td>"Тиффани"/серый</td>
+                  <td class="description__value">"Тиффани"/серый</td>
                 </tr>
                 <tr class="description__item">
                   <td class="description__parametr">Диаметр:</td>
-                  <td>25 см</td>
+                  <td class="description__value">25 см</td>
                 </tr>
                 <tr class="description__item">
                   <td class="description__parametr">Высота:</td>
-                  <td>15 см</td>
+                  <td class="description__value">15 см</td>
                 </tr>
               </table>
             </div>
-            <div class="featured__picture"><img src="img/triple-set-mobile 1.jpg" width="260" height="315" alt=""></div>
+            <div class="featured__picture">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop 1.jpg">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet 1.jpg">
+                <img src="img/triple-set-mobile 1.jpg" width="260" height="315" alt="">
+              </picture>
+            </div>
             <div class="featured__order-wrapper">
               <p class="featured__price">Цена: 990 руб.</p>
               <a class="featured__link button">Заказать</a>
@@ -125,21 +134,19 @@
           <div class="contacts__container-inner">
 
             <h2 class="contacts__title">Контакты</h2>
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <p class="contacts__text contacts__text--name">e-mail:</p>
-                <p class="contacts__text contacts__text--value"><a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
-              </li>
-              <li class="contacts__item">
-                <p class="contacts__text contacts__text--name">адрес:</p>
-                <p class="contacts__text contacts__text--value">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
-              </li>
-            </ul>
+            <table class="contacts__list">
+              <tr class="contacts__item">
+                <td class="contacts__text contacts__text--name">e-mail:</td>
+                <td class="contacts__text contacts__text--value"><a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+              </tr>
+              <tr class="contacts__item">
+                <td class="contacts__text contacts__text--name">адрес:</td>
+                <td class="contacts__text contacts__text--value">г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101</td>
+              </tr>
+            </table>
           </div>
-          <div class="contacts__map modal-map">
-            <a href="modal-map__link">
-              <img class="modal-map__image" src="img/map-mobile@1x 1.png" width="320" height="424" alt="Офис по адресу: Большая Конюшенная ул., д.19/8">
-            </a>
+          <div class="contacts__map">
+              <img class="contacts-map__image" src="img/map-mobile@1x 1.png" width="320" height="424" alt="Офис по адресу: Большая Конюшенная ул., д.19/8">
           </div>
           <a class="contacts__write button" href="">Напишите нам</a>
         </div>

@@ -75,7 +75,7 @@
 
 .main-nav__item:nth-child(3) {
   @media (min-width: @tablet-width) and (max-width: 1149px) {
-    grid-column: ~"1 / 4";
+    grid-column: ~ "1 / 4";
     grid-row: 1;
     text-align: right;
     padding-top: 35px;
@@ -138,16 +138,46 @@
 }
 
 //Кнопка
+.toggle-parametrs(@width; @height; @background-color) {
+  height: @height;
+  width: @width;
+  background-color: @background-color;
+}
+
 .main-nav__toggle {
   position: absolute;
-  top: 32px;
-  right: 33px;
+  top: 0;
+  right: 0;
+  .toggle-parametrs(1px; 1px; none);
   cursor: pointer;
+  border: none;
 
-  .toggle-parametrs(@width; @height; @background-color) {
-    height: @height;
-    width: @width;
-    background-color: @background-color;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    right: 29px;
+    left: auto;
+    cursor: pointer;
+    .toggle-parametrs(26px; 2px; #000000);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+/*.main-nav__toggle {
+
   }
   .toggle-parametrs(20px; 2px; #000000);
   border: none;
@@ -172,3 +202,4 @@
 .main-nav__toggle::after {
   transform: translate(-8px, 4px);
 }
+*/
