@@ -5,10 +5,12 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 71px;
+    padding: 0 50px;
   }
 }
 
 .reviews__wrapper {
+
   padding: 0 30px;
 
   @media (min-width: @tablet-width) and (max-width: 1149px) {
@@ -17,8 +19,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    background: url("../img/review1.png") no-repeat 50px 0;
+    max-width: 1050px;
+    background: url("../img/review1.png") no-repeat 0 0;
+    padding: 0;
     padding-bottom: 47px;
+    margin: auto;
   }
 }
 
@@ -59,6 +64,14 @@
 .reviews__text {
   .text-size(15px; 30px; 400);
   color: @graphite;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 30px;
+  }
 }
 
 .reviews__user {

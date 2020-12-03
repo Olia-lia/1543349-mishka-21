@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: 1fr 50%;
     margin: 0 auto;
-    .desktop-indent();
+    max-width: 1050px;
   }
 }
 
@@ -27,6 +27,7 @@
   @media (min-width: @desktop-width) {
     padding: 0;
     grid-column: 1;
+    padding-left: 175px;
   }
 }
 
@@ -91,7 +92,7 @@
   @media (min-width: @desktop-width) {
     grid-column: 1;
     grid-row: 2;
-    margin-left: 0;
+    margin: auto;
   }
 }
 
@@ -99,12 +100,14 @@
   margin: auto;
   box-sizing: content-box;
   min-width: 320px;
+  height: 424px;
   margin-bottom: 40px;
-  background: #c1c1c1;
+  background: url("../img/map-tablet@1x.png") no-repeat 50% 0;
 
   @media (min-width: @desktop-width) {
     box-sizing: border-box;
-    height: 457px;
+    width: 525px;
+    grid-column: 2;
     grid-row: ~"1 / 3";
   }
 }
