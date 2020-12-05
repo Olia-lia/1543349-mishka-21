@@ -1,13 +1,27 @@
 .page-title {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 27px;
-  line-height: 30px;
+  .text-size(27px; 30px; 700);
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    .text-size(43px; 50px; 700);
+  }
+
+  @media (min-width: @desktop-width) {
+    .text-size(53px; 57px; 700);
+  }
 }
 
 .section-title {
   .text-size(25px; 30px; 700);
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    .text-size(43px; 50px; 700);
+  }
+
+  @media (min-width: @desktop-width) {
+    .text-size(53px; 57px; 700);
+  }
 }

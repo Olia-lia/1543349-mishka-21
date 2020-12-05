@@ -1,14 +1,127 @@
+.order__wrapper {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  padding: 0 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.order__message {
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 225px;
+  }
+}
+
+.order-text {
+  .text-size(13px; 24px; 400);
+  color: @graphite;
+
+  @media (min-width: @tablet-width) {
+    .text-size(17px; 30px; 400);
+  }
+}
+
+.form__bar {
+  &--color,
+  &--email,
+  &--phone {
+    @media (min-width: @tablet-width) {
+      background-color: #f1f1f1;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 100px;
+  }
+}
+
 .form__group {
-  margin: 0;
-  padding: 0;
-  border: none;
+  max-width: 1050px;
+  margin: 0 auto;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.form__group--color {
+  @media (min-width: @tablet-width) {
+    background-color: #f1f1f1;
+  }
+}
+
+.form__group--phone {
+  @media (min-width: @tablet-width) {
+    background-color: #f1f1f1;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.form__group--email {
+  @media (min-width: @tablet-width) {
+    background-color: #f1f1f1;
+    padding-top: 10px;
+  }
+}
+
+.form__input--email,
+.form__input--phone {
+  @media (min-width: @tablet-width) {
+    background-color: #f1f1f1;
+  }
 }
 
 .form__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    width: 100%;
+    padding-left: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    align-self: center;
+  }
+}
+
+.form__list--color {
+  //column-width: 250px;
+
+  @media (min-width: @tablet-width) {
+    //padding-right: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .form__item:not(:last-child) {
@@ -20,17 +133,37 @@
   text-transform: uppercase;
   color: #63d1bb;
   margin: 0;
-  padding: 0;
   position: relative;
   margin-bottom: 20px;
+  white-space: nowrap;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    padding-left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
 
   &::after {
     content: "";
     position: absolute;
     top: 50%;
-    width: 200px;
+    right: 0;
     height: 1px;
+    width: 75%;
     background-color: #62d1ba;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.form__item--name {
+  @media (min-width: @tablet-width) {
+    display: flex;
   }
 }
 
@@ -39,6 +172,7 @@
   .text-size(17px; 18px; 700);
   color: #000000;
   cursor: pointer;
+  white-space: nowrap;
 
   &--type {
     margin-left: 50px;
@@ -47,9 +181,23 @@
   &--color {
     margin-left: 50px;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+  }
+}
+
+.form__label--name {
+  @media (min-width: @tablet-width) {
+    margin-right: 24px;
+    display: inline-block;
+  }
 }
 
 .form__input {
+  display: block;
+  width: 100%;
+
   &--type + .form__label--type::before {
     content: "";
     position: absolute;
@@ -98,9 +246,20 @@
   &--name,
   &--phone,
   &--email {
-    display: block;
     border: solid #000000;
     border-width: 0 0 2px 0;
+    padding-bottom: 17px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.form__group-submit {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -109,4 +268,11 @@
   background-color: #ffffff;
   .text-size(17px; 16px; 700);
   font-family: "Open Sans", "Arial", sans-serif;
+}
+
+
+.form-message {
+  .text-size(14px; 16px; 400);
+  font-style: normal;
+  color: @graphite;
 }
