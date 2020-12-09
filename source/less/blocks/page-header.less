@@ -1,8 +1,8 @@
 .page-header {
-  margin-bottom: 17px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
@@ -11,15 +11,31 @@
 }
 
 .page-header__index {
-  background: #f9f9f9 url("../img/hero-mobile1.jpg") no-repeat center 355px;
+  background: url("../img/hero-mobile1.jpg") no-repeat center 79px,
+    linear-gradient(to bottom, #ffffff 78px, rgba(0, 0, 0, 0.25) 79px, #f9f9f9 79px);
 
   @media (min-width: @tablet-width) {
     background: url("../img/hero-tablet.jpg") no-repeat center 88px,
-      linear-gradient(to bottom, #ffffff 87px, #000000 88px, #f9f9f9 88px);
+      linear-gradient(to bottom, #ffffff 87px, rgba(0, 0, 0, 0.25) 88px, #f9f9f9 88px);
   }
 
   @media (min-width: @desktop-width) {
-    background: #f9f9f9 url("../img/hero-desktop.jpg") no-repeat center 80px;
+    background: url("../img/hero-desktop.jpg") no-repeat center 88px,
+      linear-gradient(to bottom, #ffffff 87px, rgba(0, 0, 0, 0.25) 88px, #f9f9f9 88px);
+  }
+}
+
+.page-header__index--closed--menu {
+  @media (max-width: 767px) {
+    background: url("../img/hero-mobile1.jpg") no-repeat center 79px,
+      linear-gradient(to bottom, #ffffff 78px, rgba(0, 0, 0, 0.25) 79px, #f9f9f9 79px);
+  }
+}
+
+.page-header__index--nojs {
+  @media (max-width: 767px) {
+    background: url("../img/hero-mobile1.jpg") no-repeat center 378px,
+      linear-gradient(to bottom, #ffffff 78px, rgba(0, 0, 0, 0.25) 79px, #f9f9f9 79px);
   }
 }
 
@@ -32,8 +48,10 @@
 }
 
 .page-header__top {
+  margin-bottom: 78px;
+
   @media (min-width: @desktop-width) {
-    width: 1050px;
+    max-width: 1150px;
     margin: 0 auto;
   }
 }
@@ -41,6 +59,7 @@
 .page-header__logo {
   text-align: center;
   padding-top: 22px;
+  padding-bottom: 8px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -52,17 +71,54 @@
 
   @media (min-width: @desktop-width) {
     z-index: 2;
-    left: 45%;
+    left: 50%;
+    top: 9px;
+    transform: translateX(-50%);
     position: absolute;
     padding: 0;
-    padding-top: 9px;
+
+    &:hover {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+  }
+}
+
+.page-header__bottom {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 100%;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+      bottom: -12px;
+      left: 0;
+      width: 100%;
+      height: 24px;
+
+      @media (min-width: @desktop-width) {
+        bottom: -17px;
+        height: 34px;
+      }
+    }
   }
 }
 
 .page-header__container {
   padding: 0 30px;
   text-align: center;
-  padding-bottom: 120px;
+  margin-bottom: 120px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 354px;
+  }
 }
 
 .product-list {
@@ -74,31 +130,24 @@
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
+    .text-size (20px; 30px; 700);
     padding: 0 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 370px;
+    margin-top: 270px;
   }
 
   @media (min-width: @desktop-width) {
+    padding: 0 50px;
     width: 1050px;
     margin: 0 auto;
     margin-top: 238px;
   }
 }
 
-.product-list__link {
-  display: block;
-  .link-decoration(#ffffff);
-  padding: 24px 160px 31px 30px;
-
-  @media (min-width: @tablet-width) {
-    padding: 25px 167px 34px 36px;
-  }
-}
-
 .product-list__item {
+  position: relative;
   width: 100%;
 
   @media (min-width: @tablet-width) {
@@ -112,4 +161,42 @@
 
 .product-list__item--toys {
   background-color: #56c3b2;
+}
+
+.product-list__icon {
+  position: absolute;
+  top: 23px;
+  left: auto;
+  fill: #149080;
+  opacity: 0.5;
+
+  &--interior {
+    right: 36px;
+  }
+
+  &--toys {
+    right: 27px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 30px;
+  }
+}
+
+.product-list__link {
+  display: block;
+  .link-decoration(#ffffff);
+  padding: 24px 160px 31px 30px;
+
+  &:hover .product-list__icon {
+    opacity: 0.7;
+  }
+
+  &:active .product-list__icon {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 25px 167px 34px 36px;
+  }
 }
