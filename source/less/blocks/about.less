@@ -1,9 +1,10 @@
 .about__container {
   padding: 0 30px;
-  margin-bottom: 58px;
+  margin-bottom: 60px;
 
   @media (min-width: @tablet-width) {
     padding: 0 50px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: @desktop-width) {
@@ -31,7 +32,6 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    display: inline-block;
     column-count: 2;
   }
 
@@ -42,11 +42,18 @@
 }
 
 .about__item {
+  position: relative;
   .text-size(17px; 20px; 700);
   color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     .text-size(20px; 25px; 700);
+    margin-bottom: 55px;
   }
+}
+
+.about__icon {
+  display: block;
+  margin-bottom: 20px;
 }
