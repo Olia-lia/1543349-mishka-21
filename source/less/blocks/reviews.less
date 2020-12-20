@@ -148,6 +148,15 @@
   width: 100%;
   height: 52px;
 
+  &:hover .reviews__arrow-icon,
+  &:focus .reviews__arrow-icon {
+    opacity: 0.6;
+  }
+
+  &:active .reviews__arrow-icon {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     .button-reset();
     min-width: auto;

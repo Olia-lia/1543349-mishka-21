@@ -23,7 +23,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 700px;
+    max-width: 850px;
+    padding: 0 75px;
     margin: 0 auto;
     padding-top: 15px;
   }
@@ -106,7 +107,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 }
 
@@ -164,7 +165,7 @@
 
   @media (min-width: @desktop-width) {
     width: 100%;
-    align-self: center;
+    //align-self: center;
     margin-left: 0;
     padding-left: 0;
 
@@ -188,6 +189,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-bottom: 10px;
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -208,7 +210,7 @@
     }
   }
 
-  &--color:not(:last-child) {
+  &--color {
     margin-bottom: 35px;
 
     @media (min-width: @tablet-width) {
@@ -393,7 +395,6 @@
   }
 }
 
-
 .form__input {
   width: 100%;
   display: block;
@@ -420,10 +421,7 @@
     border: 2px solid @graphite;
     resize: none;
     height: 142px;
-
-    &::placeholder {
-      padding: 20px;
-    }
+    padding: 20px;
   }
 
   &--name,
@@ -433,11 +431,11 @@
     border-width: 0 0 2px 0;
     padding-bottom: 17px;
     padding-top: 15px;
+    padding-left: 15px;
     margin-bottom: 5px;
 
     @media (min-width: @tablet-width) {
       &::placeholder {
-        padding-left: 15px;
         .text-size(17px; 18px; 400);
       }
     }
@@ -451,6 +449,14 @@
   &:focus {
     border-color: #62d1ba;
     outline: none;
+  }
+
+  &--type:focus + .form__label--type svg {
+    stroke: #62d1ba;
+  }
+
+  &--color:focus + .form__label svg {
+    stroke: #62d1ba;
   }
 }
 
