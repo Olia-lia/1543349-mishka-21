@@ -141,7 +141,7 @@
   .link-decoration(#000000);
   display: block;
   padding: 28px;
-  padding-left: calc(50% - 70px);
+  padding-left: calc(50% - 85px);
   white-space: nowrap;
   text-align: left;
 
@@ -201,11 +201,10 @@
 
   @media (max-width: 767px) {
     position: absolute;
-    right: 80%;
+    left: calc(50% - 125px);
   }
 
   @media (min-width: @tablet-width) {
-
     margin-right: 26px;
   }
 }
@@ -242,6 +241,10 @@
   top: 29px;
   right: 31px;
   .toggle-parametrs(20px; 20px; transparent);
+
+  &:focus span {
+    outline: red;
+  }
 }
 
 .main-nav__toggle-icon {
