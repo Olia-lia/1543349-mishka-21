@@ -4,6 +4,7 @@
   padding: 0;
   margin-bottom: 73px;
   min-height: 79px;
+  display: none;
 
 
   @media (min-width: @tablet-width) {
@@ -293,6 +294,8 @@
   }
 }
 
+// Кнопка js
+
 .main-nav__toggle--nojs {
   @media (max-width: 767px) {
     display: none;
@@ -302,12 +305,6 @@
 .main-nav--nojs {
   @media (max-width: 767px) {
     display: block;
-  }
-}
-
-.main-nav__toggle--open + .main-nav {
-  @media (max-width: 767px) {
-    display: none;
   }
 }
 
