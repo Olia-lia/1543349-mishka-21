@@ -1,20 +1,20 @@
-var navToggle = document.querySelector(".main-nav__toggle");
+var navToggle = document.querySelector(".toggle-navigation");
 var navMain = document.querySelector(".main-nav");
 var header = document.querySelector(".page-header__wrapper");
 
-navToggle.classList.remove("main-nav__toggle--nojs");
+navToggle.classList.remove("toggle-navigation--nojs");
 navMain.classList.remove("main-nav--nojs");
 header.classList.remove("page-header__wrapper--nojs");
 
   navToggle.addEventListener('click', function() {
-    if (navToggle.classList.contains("main-nav__toggle--open")) {
-      navToggle.classList.remove("main-nav__toggle--open");
-      navToggle.classList.add("main-nav__toggle--close");
+    if (navToggle.classList.contains("toggle-navigation--open")) {
+      navToggle.classList.remove("toggle-navigation--open");
+      navToggle.classList.add("toggle-navigation--close");
       header.classList.remove("page-header__wrapper--closed-menu");
       header.classList.add("page-header__wrapper--nojs");
     } else {
-      navToggle.classList.add("main-nav__toggle--open");
-      navToggle.classList.remove("main-nav__toggle--close");
+      navToggle.classList.add("toggle-navigation--open");
+      navToggle.classList.remove("toggle-navigation--close");
       header.classList.remove("page-header__wrapper--nojs");
       header.classList.add("page-header__wrapper--closed--menu");
     }

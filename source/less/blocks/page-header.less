@@ -50,7 +50,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 70px;
     .bg-retinization (url("../img/hero-desktop.jpg"), url("../img/hero-desktop@2x.jpg"), 88px, 1150px, auto);
   }
 }
@@ -58,11 +58,13 @@
 .page-header__wrapper-inner {
   width: auto;
   background: linear-gradient(to bottom, transparent 79px, #f1f1f1 79px);
+  padding-bottom: 50px;
   margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
     background: linear-gradient(to bottom, transparent 87px, #f1f1f1 88px);
     margin-bottom: 54px;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -139,6 +141,10 @@
   margin-bottom: 120px;
   padding: 0 10px;
 
+  @media (min-width: @tablet-width) and (max-width: 1149px) {
+    margin-bottom: 373px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 354px;
   }
@@ -146,16 +152,16 @@
 
 .page-header__container-inner {
   text-align: center;
-  padding-bottom: 73px;
+  padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
-    margin-top: -40px;
+    transform: translateY(-50px);
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: -60px;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
+    transform: translateY(-55px);
   }
 }
 

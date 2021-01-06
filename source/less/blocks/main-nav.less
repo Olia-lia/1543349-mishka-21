@@ -10,7 +10,7 @@
   @media (min-width: @tablet-width) {
     display: block;
     min-height: 88px;
-    margin-bottom: 100px;
+    margin-bottom: 110px;
     padding: 0 50px;
   }
 
@@ -49,6 +49,10 @@
 
   @media (max-width: 767px) {
     border-bottom: 1px solid #ececec;
+
+    &:first-child {
+      border-top: 1px solid #ececec;
+    }
   }
 
   @media (min-width: @tablet-width) and (max-width: 1149px) {
@@ -125,7 +129,6 @@
     display: block;
     text-align: left;
     grid-area: e;
-    align-self: right;
   }
 
   @media (min-width: @desktop-width) {
@@ -148,11 +151,6 @@
 
   @media (min-width: 375px) and (max-width: 767px) {
     margin: 0 auto;
-  }
-
-  &--delivery {
-    font-weight: 400;
-    color: @graphite;
   }
 
   &:hover {
@@ -205,8 +203,16 @@
     left: calc(50% - 125px);
   }
 
-  @media (min-width: @tablet-width) {
-    margin-right: 26px;
+  &--search {
+    @media (min-width: @tablet-width) {
+      margin-right: 26px;
+    }
+  }
+
+  &--cart {
+    @media (min-width: @tablet-width) {
+      margin-right: 35px;
+    }
   }
 }
 
@@ -227,6 +233,12 @@
   &:active {
     opacity: 30%;
   }
+
+
+  &--delivery {
+    font-weight: 400;
+    color: @graphite;
+  }
 }
 
 //Кнопка
@@ -236,7 +248,7 @@
   background-color: @background-color;
 }
 
-.main-nav__toggle {
+.toggle-navigation {
   position: absolute;
   .button-reset();
   top: 29px;
@@ -248,7 +260,7 @@
   }
 }
 
-.main-nav__toggle-icon {
+.toggle-navigation__icon {
   position: absolute;
   top: 50%;
   right: 0;
@@ -270,33 +282,33 @@
   }
 }
 
-.main-nav__toggle--open {
-  & .main-nav__toggle-icon::before {
+.toggle-navigation--open {
+  & .toggle-navigation__icon::before {
     transform: translate(0, -6px);
   }
 
-  & .main-nav__toggle-icon::after {
+  & .toggle-navigation__icon::after {
     transform: translate(0, 4px);
   }
 }
 
-.main-nav__toggle--close {
-  & .main-nav__toggle-icon {
+.toggle-navigation--close {
+  & .toggle-navigation__icon {
     transform: rotate(45deg);
   }
 
-  & .main-nav__toggle-icon::before {
+  & .toggle-navigation__icon::before {
     transform: rotate(90deg);
   }
 
-  & .main-nav__toggle-icon::after {
+  & .toggle-navigation__icon::after {
     display: none;
   }
 }
 
 // Кнопка js
 
-.main-nav__toggle--nojs {
+.toggle-navigation--nojs {
   @media (max-width: 767px) {
     display: none;
   }
@@ -308,7 +320,7 @@
   }
 }
 
-.main-nav__toggle--close + .main-nav {
+.toggle-navigation--close + .main-nav {
   @media (max-width: 767px) {
     display: block;
   }
