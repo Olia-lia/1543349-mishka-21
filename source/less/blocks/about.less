@@ -10,6 +10,7 @@
   @media (min-width: @desktop-width) {
     margin: auto;
     max-width: 1050px;
+    margin-bottom: 35px;
   }
 }
 
@@ -33,6 +34,7 @@
 
   @media (min-width: @tablet-width) {
     column-count: 2;
+    column-gap: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -49,11 +51,65 @@
 
   @media (min-width: @tablet-width) {
     .text-size(20px; 25px; 700);
-    margin-bottom: 55px;
+    margin-bottom: 52px;
+    padding-top: 53px;
   }
 }
 
 .about__icon {
   display: block;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 0;
+  }
+
+  &--eco {
+    margin-left: 8px;
+  }
+
+  &--likes {
+    margin-left: 8px;
+
+    @media (min-width: @tablet-width) {
+      transform: translate(-2px, 5px);
+    }
+  }
+
+  &--packaging {
+    margin-left: 8px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 0;
+      transform: translate(3px, 4px);
+    }
+  }
+
+  &--price {
+    @media (max-width: 767px) {
+      transform: translateY(-10px);
+    }
+  }
+
+  &--care {
+    transform: translate(5px, -5px);
+
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+
+    @media (min-width: @tablet-width) {
+      transform: translateY(5px);
+    }
+  }
+
+  &--domestic {
+    transform: translateY(-5px);
+
+    @media (min-width: @tablet-width) {
+      transform: translate(-6px, 3px);
+      margin-bottom: 22px;
+    }
+  }
 }

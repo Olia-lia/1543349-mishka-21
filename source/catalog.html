@@ -4,34 +4,54 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
+    <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+        <symbol  viewBox="0 0 21 18" id="cart-icon">
+          <path d="M20.2 6.9h-3.6L13.2.4c-.2-.4-.6-.5-1-.3s-.5.6-.3 1L15 6.8H5.8L8.9 1c.2-.3 0-.7-.3-.9a.8.8 0 00-1 .3L4.2 6.9H.8c-.4 0-.8.2-.8.7 0 .4.3.8.8.8H1l1 2.8c-.3.1-.4.3-.4.6 0 .4.3.7.7.7L4.1 18h12.8l1.8-5.5c.4 0 .7-.3.7-.7 0-.2-.1-.5-.3-.6l.9-2.8h.2c.4 0 .8-.3.8-.8s-.4-.7-.8-.7zm-4.6 9.6H5.1l-1.2-4.1h13l-1.3 4zm1.6-5.5H3.3l-.8-2.7h15.6l-.9 2.7z"/>
+        </symbol>
+        <symbol viewBox="0 0 18 18" id="search-icon"><path d="M17.7 16l-3.5-3.4A7.8 7.8 0 008 0 7.8 7.8 0 000 7.9c0 4.4 3.5 7.8 7.9 7.8 1.7 0 3.3-.6 4.7-1.5l3.5 3.5c.2.2.4.3.8.3.6 0 1.1-.5 1.1-1.1l-.3-.8zM2.3 8c0-3 2.5-5.7 5.6-5.7 3 0 5.6 2.6 5.6 5.7 0 3-2.6 5.6-5.6 5.6-3 0-5.7-2.6-5.7-5.6z"/>
+        </symbol>
+        <symbol viewBox="0 0 22 22" id="insta-icon"><path d="M22 12.6c0-2.4-.3-4.8-.3-7l-.2-2.3-.2-1.1c-.3-.2-.2-.6-.5-.8-.4-.2-1.2-.1-1.7-.2L17 1l-6-.1c-2 0-4-.1-5.7-.4H3.2L3 .6c-.6 0-1.1.2-1.6.3l-.7.3c-.1.2-.5 0-.6.4-.2.2.2.5 0 .6V3c.2 0 0 .6 0 .8v1l.2 3.6c.5 2.8.4 6.5 0 9.3.3.6.5 1.1.6 1.7.3.5.3 1.1.7 1.5.5.2 1.2.2 1.9.2l1 .3c3-.2 5.6-.2 8.5-.2 2.8.2 5.9.2 8.4-.2.2-.1.1-.5.2-.8-.1-.4.2-.4.2-.8.2-2 .2-4.4.2-7zM9 6.4c.7-.2 1.4-.3 2.3-.3l2 .5c0 .2-.3.5.1.7l.2.1c.4 0 .9.2 1.2.4.5.1.5.5 1 .4V9c.3 1.2.5 2.8.3 4.3-.2.2-.2.4-.3.7-.3.3-.5.8-.8 1-.1.3-.3.5-.5.6-.1.2-.3.5-.6.5-.3.1-.6 0-.8-.1l-1.2.5-2.4-.3-.8-.2-.8-.5-.5-.2c-.2 0-.2-.2-.5-.2-.1-.4-.4-.6-.5-1.1l-.5-1.2c0-1.4.1-2.7.4-3.8.3-.6.8-1 1.1-1.7.2 0 .4 0 .4-.3h.7c.2 0 .2-.4.4-.6zM7.1 3.8l-.1-1.1c0-.3.3-.3.3-.5L7.2 2c.1-.1.7-.1.8 0 .1.5-.4.5-.5.7 0 .2.3 0 .5 0v2.3h-.5c0 .2.2.2.5.2l.1.5C8 6 7.4 5.8 7 6c0-.5.3-1.3.2-2.1zm-.7-1.6h.2c.2.4 0 .8-.1 1-.2-.2 0-.7-.1-1zM6.7 4c-.1-.1-.2-.2-.2-.5.2 0 .2.3.2.5zm0 1.4l-.1-.2c.1-.1.1 0 .1.2zm-.2.2c.2 0 .1.2.2.2 0 .1-.3.1-.4 0l.2-.2zM4.2 4.4L4 4.2v-2c.3-.2.8 0 1-.1v1c0 .2-.1.2-.3.2-.1.3.3 0 .4.3 0 .9-.1 1.8.2 2.3L4 6c0-.5 0-1.3.5-1.5l-.3-.1zm-.5 0c-.2 0-.2-.5-.1-.6.3 0 .2.5 0 .6zm-.2 1v-.7c.3 0 .3.8 0 .7zm.2-2.1c-.3 0-.3-.3-.2-.4.3 0 .4.3.2.4zm0-1.1l-.1.3c-.2 0-.1-.2-.2-.2l.3-.1zm-.2 3.6s0 .3-.1.2v-.2zm-.7-3.6c0 .3-.4.3-.4 0h.4zm-1 0c0 .3-.3.3-.4.5-.2-.2 0-.5.4-.4zm-.4.8l.7-.6v-.2h.3c0 .4-.3.3-.3.5l-.1.2v1c-.2 0-.2.3-.5.2 0-.4-.2-.6-.1-1.1zm0 3.2V4.7l.7-.5c.3.5.2 1.4.5 1.8l-1.1.2zm18.4 11l-.4 2.8c-3 .1-6 0-9 .2-.2 0-.3 0-.2-.2-.3 0-.3.2-.5.2.2-.3.4-.9.2-1.3-.8 0-.8.8-1 1.3l-1.9.1c.2-.7.7-1 1-1.7-.5-.5-1.1.1-1.3.5l-.8 1.3h-1l.8-1.4c.2-.5.6-.7.7-1.4-.2-.3-.4 0-.7 0l-.4.5-.7 1.1c-.2.2-.3 0-.5.2l-1 1c-.2 0 0-.4.2-.4v-.6l.5-.9c0-.7.5-1.2.7-1.9-.6.1-.7.6-1 1L2.8 19c-.2 0 0-.6-.1-.8 0-.6.3-1 .4-1.7l.2-.7c.2-.2 0-.6-.1-.8-.2 0-.4 0-.5.3-.2 0-.2.5-.3.3 0-2.6-.5-4.8-.5-7.4l-.2-.7 4.8.2-.3.4-.4.3c-.6 1.7-1 4-.6 6.2.2.6.6 1 1 1.4.9.4 1.6 1 2.5 1.6 1.7.4 3.8.4 5.5 0 .3 0 .6-.2.8-.4 1.4-1.1 2.8-2.4 3-4.8v-1.4c-.2-1.6-.7-2.9-1.7-3.6.3-.2 1 0 1.7.1H20c0 .2 0 .5.2.8l-.2 5c0 .6 0 1 .2 1.5l-.5 2.5zm.4-11l-2-.5c.2-.2.9 0 1-.1.5-.2.4-1 .4-1.5V3c-.3-1-1.7-.4-2.8-.5-.2.7-.5 1.8-.3 2.7.2.5 1 .3 1.5.5-.1.2-.7 0-1 0l-1-.1c-2.4 0-4.4 0-6.6.2a14 14 0 000-3.6h3c-.3.4-.9.5-1.3.8-.4.2-.9.5-1 .9l.7-.4c.4-.1.5-.4.8-.5.4-.4 1.1-.6 1.7-1 .4 0 .7 0 1 .2h3.9l2 .4.3.9-.3 2.6zm-6-3.7c.2-.1 0-.1 0 0zm0 0c-.5.2-1 .3-1.4.7.5-.2 1.1-.3 1.4-.7zm1.2.6c0-.1 0-.1 0 0zm-1.9.9c.7-.2 1.3-.6 1.8-1-.4 0-.6.4-1 .5-.2.2-.6.2-.8.5zm-.7-.8s.1 0 0 0zm-.6.6c.1-.1 0-.1 0 0zm0 0zm-.2 0c.1 0 .1 0 0 0zm-.8.7c.3-.1.6-.3.8-.6l-.8.6zm2.3 1c.5 0 .7-.4 1.3-.5.3-.3.8-.4 1-.8-.6 0-.8.4-1.2.5-.4.4-.9.5-1 .8zm-2.3-1c-.3 0 0 .3 0 0zm-.6.4c.1 0 .2 0 0 0 .1-.1 0 0 0 0zm3 .6c-.3 0 0 0 0 0zm-1.3 1.7c-.2-.2-.7-.2-1-.4L9.6 7l-.9.5c-.3.2-.4.4-.8.5-.2.2-.4.5-.7.6 0 .2-.2.3-.3.4l-.2.4-.1.3c.1 1.5.3 2.9.7 4.2.3.6 1 .8 1.4 1.3.6.3 1.3.4 2.1.5l1-.1a5 5 0 002.8-1.4c0-.3.3-.5.5-.7-.3-.7.3-1.1.5-1.6 0-1.3-.2-2.5-.6-3.4-.3-.6-1-.8-1.5-1 0 0-.2 0-.2-.2-.2 0-.7-.2-1 0zM9 11.6l-.2-.4c.3-.1.2.2.2.4zm.1.3c0-.1.1 0 0 0 0 .2 0 0 0 0zm.4-2c0-.2.1 0 0 0 .1 0 0 0 0 0zm1.7-2.2c-.2.3 0 .6.1.8-.3 0-.6-.8 0-.8zm.4 3.9c.1 0 0 0 0 0zm.7 2.9c0-.1.1 0 .2 0h-.2zm2.3-2.5c-.3-.1-.1.2-.5.2l.2-.5c.3 0 .4 0 .3.3zm-1.2-3.8l.6.4c.1.2.2.4.5.5l.2 2.4c-.4 0-.5.3-.8.4-.8 0-1.4-.2-1.9-.5l-.5-.8v-1l.5-.7c.2 0 .5-.2.5-.6v-.2c.1 0 .1.2.3.2.2 0 .3-.2.6 0z"/></symbol>
+        <symbol viewBox="0 0 15 28" id="fb-icon"><path d="M11.7 5.3c1 0 2 0 2.7-.3.4-.9.6-2 .6-3-.2 0-.1-.4-.2-.5 0-.2-.3-.2-.3-.4l-.7-.6-2.2-.5L9 .1C6.4.1 5 1.2 3.7 2.5v.2c-.7 1.6-.2 3.7-.3 5.7l.2 1.4c-1 .3-2.2.4-3.4.5-.3.3-.2 1-.2 1.7l.4 1.6.8.5.1.1c.5.3 1.5 0 2.3.1 0 2 .3 4 0 5.7 0 .3.3.4.2.8 0 1 0 2 .2 2.8-.3.5-.5 1-.4 1.8l.1.3c0 .5.6.2.5.7.2.5-.4.2-.4.5v.9c.5.3 1.5.2 2.3.2 1-.4 2.2-.5 2.8-1.2.5.2 1 0 1.2-.2 0-.3.3-.3.2-.7 0-.3-.2-.5 0-1v-2.8c-.3-2.4 0-5-.4-7.3.9 0 1.9 0 2.6-.4.4-.5.4-1.2.5-1.9.2-.2.2-.6.2-1 .2-.2.1-.7.1-1.1-.1-.6-.2-1.3-.8-1.4-.9-.2-2 .6-3 .3 0-1.1-.3-2.3 0-3.4l2.2-.6zM7.9 10l.4.7h.2c1.2.2 2.2 0 3.1-.2 0 1-.3 1.7-.5 2.5-.7 0-1.5.3-2 .2l-.6.7c0 .4.1.5 0 .8-.2.1 0 .6-.2.8v5.5c-.2.3 0 .3 0 .5v3l.1 1c0 .4-.4 0-.8 0-.5.2-.9.5-1.5.5.1-.4.3-.6.3-1.1 0-.4-.4-.3-.5-.5.2-.6.6-1.1.7-1.8.2-.5.7-1.4.3-1.9-.5 0-.5.3-.8.4v.2c0 .1 0 .2-.2.2 0 .1-.2.1 0 0l.1-.2.1-.2V21c.4-.6.7-1.2.8-2l.4-1c.2-.3.3-.9.1-1.2-.5 0-.8.3-.9.7-.3-.2.2-.4.1-.7L7 16c.2-.4.6-1.3 0-1.6-.4 0-.6.2-.7.5l-.5.7c-.4 0 0-.7-.2-1v-1.3c-.6-.8-2-.1-3.2-.3 0-.3-.2-1 0-1.2 1-.1 2.4.2 3.1-.2l.1-.2c.1-.7-.3-1-.5-1.4.2-.8 0-2 .1-3l.5-.6c.1-1 .7-1.5.7-2.6-.3 0-.6 0-.6.2-.3 0-.4.6-.5.2 0-.5.2-.6.3-1l2-1.2c1.6-.2 4.5-.4 6 .2.1.6-.3 1-.2 1.5h-1.5c-1.1.2-2 .7-3 1l-.5.5c0 .4-.2.6-.3 1-.3 1.4 0 2.6 0 4z"/></symbol>
+        <symbol viewBox="0 0 23 20" id="twitter-icon"><path d="M23 4.2c-.2-.4-1-.3-1.4-.4h-1c0-.4.2-.6.4-1 .1-.4.3-.7.2-1.3l.3-.6c.1 0 .2-.5.1-.7-.1-.2-.3-.2-.6-.2l-.2.1-1.2 1.4h-.1l-.1.1-.4.2c-.3.2-.5.4-.9.5L16.3 2c-1.2.1-2.3.2-3 .7-.8.3-1.4 1-2 1.6 0 .3-.3.4-.4.7v.2l-.2.5s.2.4 0 .5c-.8-.1-1.4-.6-2-1-.7-.5-1.5-.7-2-1.2-.7-.3-1.3-.8-1.8-1.3l-.7-.9c-.4-.2-.2-.9-.7-.9-.3 0-.3.2-.4.4 0 .2-.4.2-.4.5v.1c-.2 1.1-.5 2-.5 3.4 0 .4.3.7.5 1-.3 0-.6.2-.8.5-.1 1 .4 1.6.7 2.3 0 .4.3.7.5 1 0 .2.2.3.3.4l.1.2c0 .1.3.2.1.2-.4.1-1 .1-1.2.4v1.1l.2.5L4.2 14l1.8.4c0 .3-.2.6-.5.8-.8.4-1.8.5-2.7.7l-1.5.2c-.3 0-.9 0-1 .2-.2 0-.2 0-.3.2 0 .4.1.7.4.9 0 .3.2.3.4.4l.4.4c.5.5 1.3.8 1.8 1 .8.3 1.6.5 2.5.6l2.7.2h1l1.8.1.5-.1c.5-.3 1.2-.4 1.5-.7.6-.2 1-.6 1.6-1 .9-.7 1.8-1.2 2.4-2.3.2-.2.4-.4.4-.7l.6-.8 1-1.4.8-1.6c0-.4.3-.5.3-.9.2-.2.2-.7.4-.9l.1-.6c0-1.3 0-2.4-.3-3.4.6-.2 1.2-.3 1.6-.7.8.4 1.3 0 1-.7zm-3.3 4c-.2 1-.6 1.5-1 2.1l-.1 1c-.2.2-.3.6-.4 1l-.5.8-1.2 1.6c-.3.7-.8 1-1.2 1.6l-1.4 1.3c-.5.2-.9.4-1.2.7l-.7.3c-.2 0-.5 0-.7.3-1 0-2.2.2-3.5 0l-3-.3c-.8-.2-1.4-.7-2.2-1 .2-.2.6-.2 1-.2 0-.2.4 0 .4-.1l.5-.1c.6-.2 1.2-.3 1.6-.6.3-.1.4-.4.7-.6l.2-.4c0-.3.2-.4.1-.9.1-.2.3-.3.3-.7 0 0 0-.3-.3-.4 0-.2-.4 0-.4-.2h-.6c-.1 0-.4 0-.4-.2-.8 0-1.3-.4-1.9-.7.4-.3 1-.4 1.3-.7.5 0 1 0 1-.7s-.7-.7-1.2-.8C4 9.6 3.7 8.6 3 7.8c.2-.2.6-.2.7-.4.5 0 .5-.3.7-.5 0-.5-.3-.6-.6-.8l-.7-.7.1-2.5.1.1.8 1.2c.5.4.9 1 1.6 1.2.4.4 1 .6 1.5 1l1.7.9c.6.2 1 .7 2 .6l.5-.3c.3-.5-.1-1.1 0-1.6.4-.7.9-1 1.4-1.6l.7-.5c.3 0 .7-.2 1-.4H17.5l.7.4c.8.7 1.3 1.8 1.4 3v1.4zm.2-5.6c0 .3-.1.7-.5.8l-.1-.2c0-.2.2-.2.3-.3l.3-.3s.1 0 0 0zm-5.3 3l.5.5c0 .2.3.3.6.4 0-.2.3 0 .4-.2.2 0 .2-.2.2-.3 0-.5 0-1-.3-1.4-.7-.5-1.7 0-1.4 1z"/></symbol>
+        <symbol viewBox="0 0 27 35" id="academy-logo"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z"/></symbol>
+        <symbol viewBox="0 0 102 34" id="logo-footer"><path fill="currentColor" d="M19.2 21.4c0-2.7-.5-5.3-.5-8 0-2.2.4-4.4-.4-6.4l.1-.7c.2-1-3.3-.5-3.8.5-.3.3-.5.6-.4 1l.1.3c-.7 3.1-1.6 6.2-2.6 9.3l-1.3 3.5c-.6-1.1-1.2-2.2-1.6-3.4-1.4-3.4-2.6-6.9-4.3-10.1.2-1.5-3.2-1.4-3.9 0a8.3 8.3 0 00-.4 5.1c.3 2 .4 4 .4 6.1 0 4 .4 7.9.4 11.8-.4.4-.5 1 0 1.4l.5.5c1 .7 3.6.1 3.6-1.3 0-4-.3-8.1-.4-12.3v-1.2l.2.4c.6 1.6 1.3 3.2 2.2 4.7 1 1.5 1.3 3 1.8 4.6-.2.2-.3.5-.2.7 0 .2.1.3.3.4.6.5 1.8.3 2.5 0 .3 0 .6-.3.8-.4.3-.2 1-.7.7-1.1v-.3l1-4c.2-1.3.7-2.7 1.2-4l.2 1.9c.2 2.6 0 5 0 7.5l.2 2.5c.1.3.4 1.8.3 2-.8.4-.6 1 .2 1.2 1 .2 2.1 0 2.8-.7 1.2-1 .6-2.8.4-4.2-.5-2.3 0-5 0-7.3zM27.6 22c0-2-.8-3.8-.8-5.8 0-2.3.2-4.6-.2-6.9 0-.6-4 .1-3.9 1 .3 2.1.2 4.2.2 6.4 0 2 .5 3.9.7 5.9.3 2 0 4.2.1 6.1.1 1 .8 2.7.1 3.6-.4.5 1.5.3 1.6.3.8 0 1.8-.4 2.3-1 .7-.8.2-2.4.1-3.4-.3-2 0-4.1-.2-6.1zM44 18.8c-2.2-2.8-6-.8-8.7-1.5C34 16.9 34 15 34 13.9a28 28 0 00-.3-4c0-1.1 0-2.1.7-3l.8-.2 1.1-.1c1.5-.1 4.6.2 4 2.4-.3 1 3.6.4 4-.5 1.1-4.6-7.4-3.7-9.8-3.1-2.2.6-4.6 1.8-4.8 4.3l.3 3.6c.1 1.4-.2 2.8.3 4.1 1.1 3 5.5 1.6 7.8 1.7 3.8.3 2.7 5.5 2.7 7.9 0 1.2 1.2 3.3.2 4.4-.6.7-2 .7-2.8.8-.8.1-2.2.3-2.7-.5-1-1.4.1-3.8 0-5.3-.2-1-4.2-.1-4 1 .3 2.5-1.4 6 2.4 6.5 2.4.3 5.2-.2 7.5-.9 1.2-.4 2.3-.9 3.2-1.8 1-.9.7-2.3.4-3.5-.5-3 1-6.4-1-8.9zM61.3 18.6c0-3.8-.7-7.5-.7-11.2 0-2-4-1.3-4 .3 0 3.5.5 7.1.7 10.7v.2l-5.9.2c.2-4.6-.6-9.2-.4-13.8 0-.6-3.9-.1-3.9 1-.2 4.4.6 8.8.5 13.3l-.3 6.4.3 3.2c.1 1 .5 2.3.2 3.3-.2.8 3.6.3 4-.7.4-1.8-.3-4-.5-5.7-.2-1.7 0-3.5.1-5.2 2-.1 4.1-.3 6.1 0l.3 4 .2 3.5c0 1 .1 2.5-.2 3.5-.8 2.1 3.1 2 3.7.4.7-1.9.5-4.2.4-6.1-.2-2.5-.6-5-.6-7.3zM78.2 23c-.9-2.8-2.4-5.2-3.6-7.8l3-5.9c.7-1.7 1.3-3.7 3-5 .6-.4.6-1-.3-1-.9-.1-2 .2-2.8.7a12.1 12.1 0 00-3 4.4l-3 6c0 .1 0 .3-.2.4-.5.3-.8.8-.6 1.3l-2.5 4.6c-.3-5.5-1-11-1.2-16.5 0-1.3-4-.5-3.9 1 .2 6.8 1.2 13.6 1.3 20.5-.3.4-.2.6.1.7 0 1.7 0 3.4-.2 5.2-.5.7.5 1.1 1.1 1.1h.1c.7 0 2.6-.3 2.7-1.4.2-2 .3-4.2.2-6.2a32 32 0 004.1-5.6c.8 1.5 1.5 3 2 4.6 1 2.7 2.3 5.2 3.1 8 .5 1.7 4.5.6 4-1-1-2.9-2.5-5.3-3.4-8.1zM101.7 18.4c-.2-.8-1.4-.8-2.3-.8v-1c0-2.7-.2-5.4-.4-8-.2-2.4-1.6-3.2-4-3.1-2.4 0-5.2.5-7.5 1.4a7 7 0 00-4.6 5.6c-.5 3 .2 6.2.4 9.2.2 3.5.1 7 .1 10.4 0 .6 4 0 4-1V23l-.2-2.4c1.4-.6 3.7 0 5.1 0 1.1.2 2.2-.1 3.2-.2l.2 6.8c0 1.2.5 3.5-.4 4.5-.4.5 1.5.3 1.6.3.8 0 1.8-.4 2.3-1 1-1 .5-3.8.4-5v-5.7c1-.2 2.3-1 2.1-1.8zm-14.6-.1l-.3-3.7c-.2-2.3.1-5.5 2.3-7 .6-.3 1.7-.2 2.4-.3 1-.2 2-.4 2.8.2 1.2.8 1 3.6 1 4.8l.2 6-1.7.1c-2.3-.2-4.6-.6-6.7-.1zM24.2 6.7c.5-.1 1-.2 1.5-.5L26 6c.5-.3 1-.8.7-1.4-.5-1.1-.4-2.2-.4-3.4 0-1-1-1.2-1.8-1.2-.7.1-2.2.6-2.2 1.5l.1 3v.4c-.2.2 0 .4 0 .6V6l.4.5a3 3 0 001.5.3z"/></symbol>
+        <symbol viewBox="0 0 101 77" id="play-icon"><path  d="M97 18.1s-.9-7-3.8-10.1c-3.6-4-7.7-4.1-9.5-4.3-13.3-1-33.3-1-33.3-1h-.1s-20 0-33.3 1c-1.9.2-5.9.3-9.5 4.3a23.9 23.9 0 00-3.8 10.1s-.9 8.2-.9 16.4v7.7c0 8.2.9 16.4.9 16.4s.9 7 3.8 10.1c3.6 4 8.4 3.9 10.5 4.3 7.6.8 32.4 1 32.4 1s20 0 33.3-1c1.9-.2 5.9-.3 9.5-4.3C96 65.6 97 58.6 97 58.6s.9-8.2.9-16.4v-7.7c0-8.2-.9-16.4-.9-16.4z"/><path fill="currentColor" d="M50.3 76.8c-1 0-25-.3-32.6-1h-.2l-1.1-.2a16 16 0 01-10.8-5C2.2 67 1.2 59.8 1.1 59c0-.3-1-8.5-1-16.7v-7.7c0-8.3.9-16.4.9-16.7v-.1c.1-.8 1.2-7.9 4.5-11.6 4-4.4 8.5-4.9 10.7-5.1l.5-.1h.1c13.3-1 33.3-1 33.5-1h.1c.2 0 20.2 0 33.5 1h.1l.5.1c2.2.2 6.7.7 10.7 5.1 3.4 3.6 4.4 10.8 4.5 11.6 0 .3 1 8.5 1 16.8v7.7c0 8.3-.9 16.4-1 16.7v.1c-.1.8-1.2 8-4.5 11.6-4 4.4-8.5 4.9-10.7 5.1l-.5.1h-.1c-13.3.9-33.4.9-33.6.9zm-31.9-6.4c7.5.7 31.2 1 32 1 .7 0 20.1 0 33-1l.6-.1c1.8-.2 4.6-.5 7.2-3.3a20 20 0 003.1-8.6c.1-.5.9-8.4.9-16.1v-7.7c0-7.8-.9-15.6-1-16.1-.3-2.4-1.4-6.8-3.1-8.5-2.6-2.9-5.4-3.1-7.2-3.3l-.6-.1c-13.1-1-32.8-1-33-1h-.1c-.2 0-20 0-33 1l-.6.1c-1.8.2-4.6.5-7.2 3.3a20 20 0 00-3.1 8.6c-.1.6-.9 8.4-.9 16.1v7.7c0 7.7.9 15.6.9 16.1.3 2.4 1.4 6.8 3.1 8.5 2.3 2.6 5.3 3 7.5 3.3.6-.1 1 0 1.5.1z"/><path fill="#fff" d="M38.4 20.5v35.7l29.8-17.8-29.8-17.9z"/></symbol>
+
+      </svg>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <div class="page-header__logo">
-          <a href="index.html">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
-              <img src="img/mishka-logo-mobile.svg" alt="логотип магазина Мишка">
-            </picture>
-          </a>
-        </div>
-        <button class="main-nav__toggle main-nav--closed main-nav--nojs" type="button" aria-label="Открыть меню"></button>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="catalog.html" class="main-nav__link main-nav__link--catalog">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="form.html" class="main-nav__link main-nav__link--order">Вязание на заказ</a></li>
-            <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--search-form">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--cart">Корзина: <span>пока пуста</span></a></li>
-            <li class="main-nav__item main-nav__item--extra"><a href="" class="main-nav__link-extra main-nav__link-extra--new">Новые поступления</a></li>
-            <li class="main-nav__item main-nav__item--extra"><a href="" class="main-nav__link-extra main-nav__link-extra--sale">Распродажа</a></li>
-            <li class="main-nav__item main-nav__item--extra"><a href="" class="main-nav__link-extra main-nav__link-extra--delivery">Бесплатная доставка по России</a></li>
-          </ul>
-        </nav>
-        <div class="page-header__container">
-          <h1 class="page-title">Каталог товаров</h1>
+      <div class="page-header__wrapper page-header__wrapper--closed-menu page-header__wrapper--nojs">
+        <div class="page-header__wrapper-inner">
+        <div class="page-header__top">
+          <div class="page-header__logo">
+            <a href="index.html" aria-label="Главная страница">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+                <img src="img/mishka-logo-mobile.svg" alt="логотип магазина Мишка">
+              </picture>
+            </a>
+          </div>
+          <button class="page-header__toggle toggle-navigation toggle-navigation--open  toggle-navigation--nojs" type="button" aria-label="Открыть меню"><span class="toggle-navigation__icon"></span></button>
+            <nav class="main-nav  main-nav--nojs">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--catalog">Каталог товаров</a></li>
+                <li class="main-nav__item"><a href="form.html" class="main-nav__link main-nav__link--order">Вязание на заказ</a></li>
+                <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--search"><svg class="main-nav__icon main-nav__icon--search" width="18" height="18"><use xlink:href="#search-icon"></use></svg><span class="main-nav__link-text">Поиск по сайту</span></a></li>
+                <li class="main-nav__item"><a href="" class="main-nav__link main-nav__link--cart"><svg class="main-nav__icon main-nav__icon--cart" width="21" height="18"><use xlink:href="#cart-icon"></use></svg>Корзина: <span>пока пуста</span></a></li>
+                <li class="main-nav__item main-nav__item--extra"><a href="" class="main-nav__link-extra">Новые поступления</a></li>
+                <li class="main-nav__item main-nav__item--extra"><a href="" class="main-nav__link-extra">Распродажа</a></li>
+                <li class="main-nav__item main-nav__item--extra"><a href="" class="main-nav__link-extra main-nav__link-extra--delivery">Бесплатная доставка по России</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="page-header__bottom">
+            <div class="page-header__container-inner">
+              <h1 class="page-title">Каталог товаров</h1>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -45,9 +65,13 @@
                 <div class="catalog__photo">
                   <a href="product.html">
                     <picture>
-                      <source media="(min-width: 1150px)" srcset="img/catalog/photo-1-desktop.jpg, img/catalog/photo-1-desktop@2x.jpg">
-                      <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg, img/catalog/photo-1-tablet@2x.jpg">
-                      <img src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg" alt="Вязаный цветной зайчик">
+                      <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/photo-1-desktop.webp 1x, img/catalog/photo-1-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.webp 1x, img/catalog/photo-1-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/catalog/photo-1-mobile.webp 260w, img/catalog/photo-1-mobile@2x.webp 520w" sizes="(max-width: 320px) 260px">
+
+                      <source media="(min-width: 1150px)" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+                      <img src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 520w" alt="Вязаный цветной зайчик" sizes="(max-width: 320px) 260px">
                     </picture>
                   </a>
                 </div>
@@ -58,7 +82,7 @@
                   <p class="catalog__options">Рост 30 см, вес 200 г</p>
                   <div class="catalog__description-price">
                     <p class="catalog__price">1 200 руб.</p>
-                    <a class="catalog__button" href="" aria-label="Купить">Купить</a>
+                    <a class="catalog__button order-button" href="order.html" aria-label="Купить"><svg class="catalog__icon icon-cart" width="20" height="19"><use xlink:href="#cart-icon"></use></svg></a>
                   </div>
                 </div>
               </li>
@@ -67,9 +91,13 @@
                 <div class="catalog__photo">
                   <a href="product.html">
                     <picture>
-                      <source media="(min-width: 1150px)" srcset="img/catalog/photo-2-desktop.jpg, img/catalog/photo-2-desktop@2x.jpg">
-                      <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg, img/catalog/photo-2-tablet@2x.jpg">
-                      <img src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg" alt="Вязаная двухцветная корзинка">
+                      <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/photo-2-desktop.webp 1x, img/catalog/photo-2-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.webp 1x, img/catalog/photo-2-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/catalog/photo-2-mobile.webp 260w, img/catalog/photo-2-mobile@2x.webp 520w" sizes="(max-width: 320px) 260px">
+
+                      <source media="(min-width: 1150px)" srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+                      <img src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg 520w" sizes="(max-width: 320px) 260px" alt="Вязаная двухцветная корзинка">
                     </picture>
                   </a>
                 </div>
@@ -80,7 +108,7 @@
                   <p class="catalog__options">Диаметр 15 см, высота 10см</p>
                   <div class="catalog__description-price">
                     <p class="catalog__price">690 руб.</p>
-                    <a class="catalog__button" href="" aria-label="Купить">Купить</a>
+                    <a class="catalog__button order-button" href="order.html" aria-label="Купить"><svg class="catalog__icon icon-cart" width="20" height="19"><use xlink:href="#cart-icon"></use></svg></a>
                   </div>
                 </div>
               </li>
@@ -88,20 +116,24 @@
                 <div class="catalog__photo">
                   <a href="product.html">
                     <picture>
-                      <source media="(min-width: 1150px)" srcset="img/catalog/photo-3-desktop.jpg, img/catalog/photo-3-desktop@2x.jpg">
-                      <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg, img/catalog/photo-3-tablet@2x.jpg">
-                      <img src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg" alt="Вязаная двухцветная корзина для игрушек">
+                      <source type="image/webp" media="(min-width: 1150px)" srcset="img/catalog/photo-3-desktop.webp 1x, img/catalog/photo-3-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.webp 1x, img/catalog/photo-3-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/catalog/photo-3-mobile.webp 260w, img/catalog/photo-3-mobile@2x.webp 520w" sizes="(max-width: 320px) 260px">
+
+                      <source media="(min-width: 1150px)" srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+                      <img src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 520w" sizes="(max-width: 320px) 260px" alt="Вязаная двухцветная корзина для игрушек">
                     </picture>
                   </a>
                 </div>
                 <div class="catalog__description">
                   <a class="catalog__link" href="product.html">
-                    <h3 class="catalog__title product-title">Большая корзинка для игрушек</h3>
+                    <h3 class="catalog__title product-title">Большая корзинка<br> для игрушек</h3>
                   </a>
                   <p class="catalog__options">Диаметр 30 см, высота 30см</p>
                   <div class="catalog__description-price">
                     <p class="catalog__price">1 500 руб.</p>
-                    <a class="catalog__button" href="" aria-label="Купить">Купить</a>
+                    <a class="catalog__button order-button" href="order.html" aria-label="Купить"><svg class="catalog__icon icon-cart" width="20" height="19"><use xlink:href="#cart-icon"></use></svg></a>
                   </div>
                 </div>
               </li>
@@ -111,54 +143,66 @@
 
         <section class="video">
           <div  class="video__wrapper">
-            <h2 class="visually-hidden">Видео о наших работах</h2>
-            <div class="video__title-container">
-              <h3 class="video__title">Процесс производства</h3>
-            </div>
-            <div class="video__content">
-              <img class="video__image video__image--frame" src="" width="260" height="150" alt="обложка видео">
-              <svg class="video__image video__image--play" width="101" height="77"></svg>
-            </div>
-            <div class="video__description">
-              <p class="video__description-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-              </p>
-              <a href="" class="video__link button">Сделать заказ</a>
+            <div class="video__wrapper-inner">
+              <h2 class="visually-hidden">Наш видео-блог</h2>
+              <h3 class="video__title">Процесс<br>&nbsp;производства</h3>
+              <div class="video__content">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+                  <img src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2x.png" alt="обложка видео">
+                </picture>
+                <a class="video__content-link" href="" aria-label="Включить видео">
+                  <svg class="video__content-icon play-icon" width="101" height="77" role="img" focusable="true"><use xlink:href="#play-icon"></use></svg>
+                </a>
+              </div>
+              <div class="video__description">
+                <p class="video__description-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+                <a href="" class="video__link button">Сделать заказ</a>
+              </div>
             </div>
           </div>
         </section>
       </main>
-      <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <div class="page-footer__logo">
-            <img src="img/logo-footer.svg" width="102" height="34" alt="Логотип магазина 'Мишка'">
-          </div>
-          <ul class="page-footer__social social">
-            <li class="social__item"><a href="" class="social__link social__link--instagram" aria-label="Инстаграм">Инстаграм</a></li>
-            <li class="social__item"><a href="" class="social__link social__link--facebook" aria-label="Фейсбук">Фейсбук</a></li>
-            <li class="social__item"><a href="" class="social__link social__link--twitter" aria-label="Твиттер">Твиттер</a></li>
-          </ul>
-        <div class="page-footer__developer developer">
-          <b class="developer__text">Разработано</b>
-          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип разработчика 'HTML-Academy'"></a>
-        </div>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a href="index.html" class="page-footer__logo" aria-label="Главная страница">
+          <svg class="page-footer__picture" width="102" height="34"><use xlink:href="#logo-footer"></use></svg>
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item"><a href="" class="social__link social__link--instagram" aria-label="Инстаграм"><svg class="social__icon" width="22" height="21"><use xlink:href="#insta-icon"></use></svg></a></li>
+          <li class="social__item"><a href="" class="social__link social__link--facebook" aria-label="Фейсбук"><svg class="social__icon" width="15" height="28"><use xlink:href="#fb-icon"></use></svg></a></li>
+          <li class="social__item"><a href="" class="social__link social__link--twitter" aria-label="Твиттер"><svg class="social__icon" width="23" height="20"><use xlink:href="#twitter-icon"></use></svg></a></li>
+        </ul>
+      <div class="page-footer__developer developer">
+        <p class="developer__text">Разработано</p>
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTMl-Academy"><svg role="img" class="developer__icon" width="27" height="35"><use xlink:href="#academy-logo"></use></svg></a>
       </div>
-    </footer>
+    </div>
+  </footer>
 
     <section class="modal-order">
       <div class="modal-order__wrapper">
-        <h3 class="modal-order__title">Добавить в корзину</h3>
-        <div class="modal-order__sizes">
-          <p class="modal-order__text">Выберите размер:</p>
-          <form class="modal-order__form" method="post" action="https://echo.htmlacademy.ru">
-            <div class="modal-order__group">
-              <label class="modal-order__label" for="size-S">S<input class="modal-order__input visually-hidden" type="radio" name="size" id="size-S" value="S"></label>
-              <label class="modal-order__label" for="size-M">M<input class="modal-order__input visually-hidden" type="radio" name="size" id="size-M" value="M"></label>
-              <label class="modal-order__label" for="size-L">L<input class="modal-order__input visually-hidden" type="radio" name="size" id="size-L" value="L"></label>
-            </div>
-            <button class="modal-order__add" type="submit">Добавить</button>
-          </form>
+        <div class="modal-order__window">
+          <h3 class="modal-order__title">Добавить в корзину</h3>
+          <div class="modal-order__sizes">
+            <p class="modal-order__text">Выберите размер:</p>
+            <form class="modal-order__form" method="post" action="https://echo.htmlacademy.ru">
+              <div class="modal-order__group">
+                <input class="modal-order__input visually-hidden" type="radio" name="size" id="size-S" value="S">
+                <label class="modal-order__label modal-order__label--S" for="size-S">S</label>
+                <input class="modal-order__input visually-hidden" type="radio" name="size" id="size-M" value="M">
+                <label class="modal-order__label" for="size-M">M</label>
+                <input class="modal-order__input visually-hidden" type="radio" name="size" id="size-L" value="L">
+                <label class="modal-order__label" for="size-L">L</label>
+              </div>
+              <button class="modal-order__add" type="submit">Добавить</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
+    <script src="js/script.min.js"></script>
 </body>
 </html>
